@@ -193,7 +193,7 @@ def interpret_result(prob, threshold=0.49):
     return "Resign" if prob >= threshold else "Stay"
 
 # 🚀 Load pipeline
-pipeline = joblib.load("./adaboost_pipeline.pkl")
+pipeline = joblib.load("adaboost_pipeline.pkl")
 
 # 🎯 Streamlit Layout
 st.set_page_config(page_title="Employee Attrition Prediction - Constantia", layout="wide")
